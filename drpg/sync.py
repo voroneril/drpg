@@ -37,6 +37,8 @@ class DrpgSync:
     def __init__(self, config):
         self._use_checksums = config.use_checksums
         self._library_path = config.library_path
+        self._idstring = config.idstring
+        self._idfile = config.idfile
         self._api = DrpgApi(config.token)
 
     def sync(self):
